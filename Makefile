@@ -6,7 +6,7 @@ print-%: ; @echo $($*)
 # Disable builtin rules:
 .SUFFIXES:
 
-DEPS_DIR := $(HOME)/pyston_deps
+DEPS_DIR := $(WORKSPACE)/src/pyston_deps
 
 SRC_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 BUILD_DIR := $(SRC_DIR)/build
